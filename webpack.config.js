@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
     mode : 'development',
     entry : {
-        index : "./index.jsx"
+        index : "./js/index.jsx"
     },
     output : {
         filename : "./bundle.js"
