@@ -94,19 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _time_jsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./time.jsx */ \"./js/time.jsx\");\n\nsetInterval(_time_jsx__WEBPACK_IMPORTED_MODULE_0__[\"default\"].showTime, 1000);\n\n//# sourceURL=webpack:///./js/index.jsx?");
-
-/***/ }),
-
-/***/ "./js/time.jsx":
-/*!*********************!*\
-  !*** ./js/time.jsx ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return time; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\n\nvar time =\n/*#__PURE__*/\nfunction () {\n  function time() {\n    _classCallCheck(this, time);\n  }\n\n  _createClass(time, [{\n    key: \"showTime\",\n    value: function showTime() {\n      var element = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n        id: \"time\"\n      }, \"Time now : \", new Date().toLocaleTimeString()));\n      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(element, document.getElementById(\"app\"));\n    }\n  }]);\n\n  return time;\n}();\n\n\n\n//# sourceURL=webpack:///./js/time.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction showTime() {\n  var element = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n    id: \"time\"\n  }, \"Time now : \", new Date().toLocaleTimeString()));\n  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(element, document.getElementById(\"app\"));\n}\n\n;\nsetInterval(showTime, 1000);\n\n//# sourceURL=webpack:///./js/index.jsx?");
 
 /***/ }),
 
