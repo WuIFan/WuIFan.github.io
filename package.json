@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-v": "babel -v",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --hot --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "homepage": "https://github.com/WuIFan/WuIFan.github.io#readme",
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.5",
+    "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
