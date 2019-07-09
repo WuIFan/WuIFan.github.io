@@ -1,15 +1,17 @@
 import React from 'react'
 
-var me = {
-    name : "Wu I Fan",
-    email : "denny91002@gmail.com"
-}
 class Profile extends React.Component {
+    state = {
+        me: {
+            name : "Wu I Fan",
+            email : "denny91002@gmail.com"
+        }
+    };
     render() {
         return (
             <div className = "profile">
-                <li>name:{me.name}</li>
-                <li>email:{me.email} </li>    
+                <li>name:{this.state.me.name}</li>
+                <li>email:{this.state.me.email} </li>    
             </div>
             
         )

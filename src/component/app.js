@@ -1,13 +1,13 @@
 import {hot} from 'react-hot-loader'
 import React from 'react'
-import Timer from './timer'
+import Header from './header'
 import Profile from './profile'
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Timer />
+                <Header />
                 <Profile />
             </div>   
         )

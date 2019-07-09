@@ -8,9 +8,9 @@ class Timer extends React.Component {
     }
     render() {
         const element = (
-            <div>
-                <h2 id = "time">Time now : {this.state.time.toLocaleTimeString()}</h2>
-            </div>
+            <React.Fragment>
+                <h6 id = "time">{this.state.time.toLocaleTimeString()}</h6>
+            </React.Fragment>
           );
         return (
             element
