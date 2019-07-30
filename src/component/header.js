@@ -5,16 +5,20 @@ import '../style/header.scss'
 export class header extends Component {
     render() {
         return (
-            <div className = "header" style = {headerStyle}>
-                <h1>My home page</h1>
-                <Timer />
-            </div>
+            <frameElement>
+                <div className = "header">
+                    <h1>Ivans</h1>
+                    <Timer />
+                </div>
+                <div className = "bg">
+                    <label  className = "switch">
+                        <input type = "checkbox"></input>
+                        <span className = "slider"></span>
+                    </label>
+                </div>  
+            </frameElement>
+            
         )
     }
-}
-const headerStyle = {
-    background: '#333',
-    color: '#fff',
-    textAlign: 'center'
 }
 export default header

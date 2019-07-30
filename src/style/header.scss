@@ -1,3 +1,60 @@
-h6 {
+body {
+    margin: 0px;
+}
+.header {
+    display: block;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    h1 {
+        margin: 0px;
+    }
+    h6 {
+        text-align: right;
+        margin: 0px;
+    }
+}
+.bg {
     text-align: right;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    right: 5px;
+    width: 60px;
+    height: 30px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked + .slider{
+            background-color: #000000;
+        }
+        &:checked + .slider::before {
+            transform: translateX(26px);
+        }
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            left: 3px;
+            bottom: 3px;
+            background-color:#676b9c;
+            transition: .3s;
+            border-radius: 50%;
+        }
+    }
 }
