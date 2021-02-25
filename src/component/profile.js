@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../style/profile.scss'
+// import '../style/profile.scss'
 import logo from '../image/quam.jpg';
 
 class Profile extends Component {

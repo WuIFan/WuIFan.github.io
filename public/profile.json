@@ -1,0 +1,57 @@
+{
+    "main": {
+      "name": "Wu I Fan (Ivans)",
+      "description": "Master of Information Engineering, National Cheng Kung University",
+      "hello": "Welcome To My Place!",
+      "image": "./image/ivans.jpg",
+      "email": "denny91002@gmail.com",
+      "address": {
+        "country": "TW",
+        "city": "Kaohsiung"
+      },
+      "skills": [
+        { 
+          "name": "Frontend",
+          "content": ["javascript","typescript","reatjs"]
+        },
+        {
+           "name": "Backend",
+          "content": ["python","jquery","java","mysql","firebase"]
+        },
+        {
+           "name": "Testing",
+          "content":  ["Selenium IDE","SideeX"]
+        },
+        {
+           "name": "Others",
+          "content":  ["git","trello","hackmd"]
+        }
+      ],
+      "schools": [
+        {
+          "degree": "Bachelor Degree",
+          "title": "National Chung Hsing University, Computer Science and Engineering",
+          "years": "2014 - 2018"
+        },
+        {
+          "degree": "Master Degree",
+          "title": "National Cheng Kung University, Computer Science and Information Engineering",
+          "years": "2018 - 2020"
+        }
+      ],
+      "projects": [
+        {
+          "name": "SideeX",
+          "tool": "Typescript"
+        },
+        {
+          "name": "Spotify_MergePlayList",
+          "tool": "Python"
+        },
+        {
+          "name": "Discord_Bot",
+          "tool": "Python"
+        }
+      ]
+    }
+}

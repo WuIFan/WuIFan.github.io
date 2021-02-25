@@ -1,24 +1,20 @@
 import React, { Component } from 'react'
-import Timer from './timer'
-import '../style/header.scss'
 
-export class header extends Component {
+export class Header extends Component {
     render() {
+        if (this.props.data) {
+            var name = this.props.data.name;
+            var hello = this.props.data.hello
+        }
         return (
-            <frameElement>
-                <div className = "header">
-                    <h1>About Me</h1>
-                    <Timer />
+            <header className="masthead">
+                <div className="container">
+                    <div className="masthead-heading text-uppercase">{name}</div>
+                    <div className="masthead-subheading">{hello}</div>
                 </div>
-                <div className = "bg">
-                    <label  className = "switch">
-                        <input type = "checkbox"></input>
-                        <span className = "slider"></span>
-                    </label>
-                </div>  
-            </frameElement>
-            
+            </header>
         )
     }
 }
-export default header
+
+export default Header
