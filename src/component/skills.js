@@ -26,7 +26,7 @@ export class Skills extends Component {
                 <div class="container">
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">SKILLS</h2>
-                        <h3 class="section-subheading text-muted">My exprence.</h3>
+                        <h3 class="section-subheading text-muted">What I Can.</h3>
                     </div>
                     <div class="row text-center">
                         {show_skill}

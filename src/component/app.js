@@ -27,9 +27,21 @@ class App extends React.Component {
             }.bind(this),
             error: function(xhr, status, err){
                 console.log(err);
-                alert(err);
             }
         });
+        if(!this.state.profileData) {
+            $.ajax({
+                url:'/public/profile.json',
+                dataType:'json',
+                cache: false,
+                success: function(data){
+                    this.setState({profileData: data});
+                }.bind(this),
+                error: function(xhr, status, err){
+                    console.log(err);
+                }
+            });
+        }
     }
 
     componentDidMount(){
