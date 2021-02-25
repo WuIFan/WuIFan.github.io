@@ -5,8 +5,9 @@ import Header from './header';
 import Skills from './skills';
 import About from './about';
 import Projects from './projects'
+import profile_data from './profile_data'
 import Profile from './profile';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 class App extends React.Component {
     constructor(props){
@@ -17,35 +18,22 @@ class App extends React.Component {
     
       }
     
-    getResumeData(){
-        $.ajax({
-            url:'/profile.json',
-            dataType:'json',
-            cache: false,
-            success: function(data){
-                this.setState({profileData: data});
-            }.bind(this),
-            error: function(xhr, status, err){
-                console.log(err);
-            }
-        });
-        if(!this.state.profileData) {
-            $.ajax({
-                url:'/public/profile.json',
-                dataType:'json',
-                cache: false,
-                success: function(data){
-                    this.setState({profileData: data});
-                }.bind(this),
-                error: function(xhr, status, err){
-                    console.log(err);
-                }
-            });
-        }
-    }
+    // getResumeData(){
+    //     $.ajax({
+    //         url:'/profile.json',
+    //         dataType:'json',
+    //         cache: false,
+    //         success: function(data){
+    //             this.setState({profileData: data});
+    //         }.bind(this),
+    //         error: function(xhr, status, err){
+    //             console.log(err);
+    //         }
+    //     });
+    // }
 
     componentDidMount(){
-        this.getResumeData();
+        this.setState({profileData: profile_data});
     }
     render() {
         return (

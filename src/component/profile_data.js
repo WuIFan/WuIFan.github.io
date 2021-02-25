@@ -1,4 +1,4 @@
-{
+export const profile_data = {
     "main": {
       "name": "Wu I Fan (Ivans)",
       "description": "Master of Information Engineering, National Cheng Kung University",
@@ -55,3 +55,4 @@
       ]
     }
 }
+export default profile_data
