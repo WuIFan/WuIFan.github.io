@@ -7,7 +7,7 @@ export class header extends Component {
         return (
             <frameElement>
                 <div className = "header">
-                    <h1>Ivans</h1>
+                    <h1>About Me</h1>
                     <Timer />
                 </div>
                 <div className = "bg">
