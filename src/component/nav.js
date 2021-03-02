@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import $ from 'jquery';
 
 export class Nav extends Component {
-      constructor(props) {
-        super(props);
-        this.state = {hideNav: false};
+    constructor(props) {
+      super(props);
+      this.state = {hideNav: false};
     }
     render() {
         return (

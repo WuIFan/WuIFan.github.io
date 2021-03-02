@@ -6,7 +6,7 @@ import Skills from './skills';
 import About from './about';
 import Projects from './projects'
 import profile_data from './profile_data'
-import Profile from './card';
+// import Profile from './card';
 // import $ from 'jquery';
 
 class App extends React.Component {

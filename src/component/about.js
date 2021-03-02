@@ -5,37 +5,37 @@ export class About extends Component {
         if(this.props.data){
             var show_edu = [];
             let inv = false;
-            for(let edu of this.props.data.schools) {
+            for(let [index, edu] of this.props.data.schools.entries()) {
                 let invclass = ""
                 if(inv) {
                     invclass ="timeline-inverted"
                 }
                 inv = !inv
                 show_edu.push(
-                    <li className={invclass}>
-                        <div class="timeline-image"><i class="fas fa-graduation-cap fa-stack-2x"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
+                    <li className={invclass} key={index}>
+                        <div className="timeline-image"><i className="fas fa-graduation-cap fa-stack-2x"></i></div>
+                        <div className="timeline-panel">
+                            <div className="timeline-heading">
                                 <h4>{edu.years}</h4>
-                                <h4 class="subheading">{edu.degree}</h4>
+                                <h4 className="subheading">{edu.degree}</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">{edu.title}</p></div>
+                            <div className="timeline-body"><p className="text-muted">{edu.title}</p></div>
                         </div>
                     </li>
                 )
             }
         }
         return (
-            <section class="page-section" id="about">
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">About</h2>
-                        <h3 class="section-subheading text-muted">My exprence.</h3>
+            <section className="page-section" id="about">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="section-heading text-uppercase">About</h2>
+                        <h3 className="section-subheading text-muted">My exprence.</h3>
                     </div>
-                    <ul class="timeline">
+                    <ul className="timeline">
                         {show_edu}
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
+                        <li className="timeline-inverted">
+                            <div className="timeline-image">
                                 <h4>
                                     Now
                                 </h4>

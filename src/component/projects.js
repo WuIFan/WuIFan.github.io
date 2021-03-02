@@ -2,17 +2,20 @@ import React, { Component } from 'react'
 
 export class Projects extends Component {
     render() {
+        const style = {
+            overflow: 'auto'
+        }
         if(this.props.data){
             var show_project = this.props.data.projects.map(function(projects,index){
                 return (
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href={"#portfolioModal"+(index+1)}>
-                                <img class="img-fluid" src={projects.picture} alt=""/>
+                    <div className="col-lg-4 col-sm-6 mb-4" key={index}>
+                        <div className="portfolio-item">
+                            <a className="portfolio-link" data-toggle="modal" href={"#portfolioModal"+(index+1)}>
+                                <img className="img-fluid" src={projects.picture} alt=""/>
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">{projects.name}</div>
-                                <div class="portfolio-caption-subheading text-muted">{projects.tool}</div>
+                            <div className="portfolio-caption">
+                                <div className="portfolio-caption-heading">{projects.name}</div>
+                                <div className="portfolio-caption-subheading text-muted">{projects.tool}</div>
                             </div>
                         </div>
                     </div>
@@ -20,23 +23,23 @@ export class Projects extends Component {
                 })
             var show_modal = this.props.data.projects.map(function(projects,index){
                 return (
-                    <div class="portfolio-modal modal fade" id={"portfolioModal"+(index+1)} tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <div class="modal-body">
-                                                <h2 class="text-uppercase">{projects.name}</h2>
-                                                <p class="item-intro text-muted">{projects.tool}</p>
-                                                <img class="img-fluid d-block mx-auto" src={projects.picture} alt="" />
+                    <div className="portfolio-modal modal fade" key={index} id={"portfolioModal"+(index+1)} tabIndex="-1" role="dialog" aria-hidden="true">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                                <div className="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                                <div className="container">
+                                    <div className="row justify-content-center">
+                                        <div className="col-lg-8">
+                                            <div className="modal-body">
+                                                <h2 className="text-uppercase" style={style}>{projects.name}</h2>
+                                                <p className="item-intro text-muted">{projects.tool}</p>
+                                                <img className="img-fluid d-block mx-auto" src={projects.picture} alt="" />
                                                 <p>{projects.description}</p>
-                                                <ul class="list-inline">
+                                                <ul className="list-inline">
                                                     <li>Website: {projects.website}</li>
                                                 </ul>
-                                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                                    <i class="fas fa-times mr-1"></i>
+                                                <button className="btn btn-primary" data-dismiss="modal" type="button">
+                                                    <i className="fas fa-times mr-1"></i>
                                                     Close Project
                                                 </button>
                                             </div>
@@ -50,13 +53,13 @@ export class Projects extends Component {
             })
         }
         return (
-            <section class="page-section bg-light" id="projects">
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Projects</h2>
-                        <h3 class="section-subheading text-muted">What I do.</h3>
+            <section className="page-section bg-light" id="projects">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="section-heading text-uppercase">Projects</h2>
+                        <h3 className="section-subheading text-muted">What I do.</h3>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         {show_project}
                     </div>
                 </div>
