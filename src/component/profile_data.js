@@ -12,11 +12,11 @@ export const profile_data = {
       "skills": [
         { 
           "name": "Frontend",
-          "content": ["Javascript","Typescript","Reactjs"]
+          "content": ["Javascript","Typescript","ReactJS"]
         },
         {
           "name": "Backend",
-          "content": ["Python","Jquery","Java","MySQL","Firebase"]
+          "content": ["Python","NodeJS","Java","MySQL","Firebase"]
         },
         {
           "name": "Testing",
@@ -24,7 +24,7 @@ export const profile_data = {
         },
         {
           "name": "Others",
-          "content":  ["git","trello","hackmd"]
+          "content":  ["Git","Trello","Hackmd"]
         }
       ],
       "schools": [
