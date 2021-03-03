@@ -12,7 +12,7 @@ export const profile_data = {
       "skills": [
         { 
           "name": "Frontend",
-          "content": ["Javascript","Typescript","Reatjs"]
+          "content": ["Javascript","Typescript","Reactjs"]
         },
         {
           "name": "Backend",
@@ -59,7 +59,7 @@ export const profile_data = {
           "tool": "Python",
           "picture": "assets/img/portfolio/01-thumbnail.jpg",
           "description": "因為和朋友平常最常使用的軟體就是 discord ，而自己又想練習寫 bot ，再加上這群朋友也都是資工系的學生，所以就想到一個可以爬 leetcode 個人資訊的網頁的 bot ，來抓出各種資訊，讓我們來互相比較砥礪成長。",
-          "website": ""
+          "website": "https://github.com/WuIFan/Ivans_Bot"
         }
       ]
     }
