@@ -1,0 +1,35 @@
+section {
+    height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: var(--main-bg-color);
+}
+
+section:nth-child(even) {
+    background-color:  var(--secondary-bg-color);
+}
+
+.iw-home-introduce--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.iw-home-introduce--text {
+    white-space: pre-wrap;
+    color: var(--main-font-color);
+    font-size: 32px;
+}
+
+.iw-home-introduce--image {
+    width: 350px;
+    margin-left: 50px;
+}
+
+.iw-home-introduce--image img {
+    width: 100%;
+    border-radius: 35px;
+}
