@@ -1,7 +1,12 @@
 :root {
-    --main-bg-color: #222222;
-    --secondary-bg-color: #b9b9b9;
-    --main-font-color: #fceef5;
-    --secondary-font-color: #454f5e;
-    --main-point-font-color: #f4a7ba;
+  --main-bg-color: #222222;
+  --secondary-bg-color: #444444;
+  --main-font-color: #fceef5;
+  --secondary-font-color: #454f5e;
+  --main-point-font-color: #f4a7ba;
+}
+
+body {
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
 }
