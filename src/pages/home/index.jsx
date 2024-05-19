@@ -6,7 +6,6 @@ import classNames from 'classnames';
 import _map from 'lodash/map';
 
 export default function Home() {
-  console.log('#', configs.introduce);
   const [isBackCard, setIsBackCard] = useState(false);
   const [activeCategory, setActiveCategory] = useState(
     configs.toolbox.categories[0]
@@ -18,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       <section>
         <div className="iw-home-introduce--container">
           <div className="iw-home-introduce--text">
@@ -33,7 +32,7 @@ export default function Home() {
         </div>
       </section>
       <section className="iw-home-section-toolbox">
-        <h2 style={{fontSize: '42px', marginBottom: '50px'}}>My Toolbox</h2>
+        <h2 className="iw-home-section-title">My Toolbox</h2>
         <div className="iw-home-toolbox--container">
           <div
             className={classNames('iw-home-toolbox-card', {
@@ -77,6 +76,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      <section>
+        <div className="iw-home-section-experience">
+          <h2 className="iw-home-section-title">My Experience</h2>
+        </div>
+      </section>
+    </>
   );
 }

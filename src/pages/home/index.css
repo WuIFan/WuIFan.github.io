@@ -1,20 +1,26 @@
 section {
+  display: flex;
 }
 
 section:nth-child(odd) {
-  background-color: var(--main-bg-color);
+  background-image: linear-gradient(
+    135deg,
+    var(--main-bg-color),
+    var(--secondary-bg-color)
+  );
 }
 
 section:nth-child(even) {
-  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+    45deg,
+    var(--main-bg-color),
+    var(--secondary-bg-color)
+  );
 }
 
-.iw-home-section-toolbox {
-  min-height: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.iw-home-section-title {
+  font-size: 42px;
+  margin-bottom: 50px;
 }
 
 .iw-home-introduce--container {
@@ -22,7 +28,8 @@ section:nth-child(even) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 50px;
 }
 
 .iw-home-introduce--text {
@@ -39,6 +46,14 @@ section:nth-child(even) {
 .iw-home-introduce--image img {
   width: 100%;
   border-radius: 35px;
+}
+
+.iw-home-section-toolbox {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .iw-home-toolbox--container {
@@ -61,7 +76,6 @@ section:nth-child(even) {
   cursor: pointer;
   width: 100%;
   text-align: center;
-  background-color: var(--main-bg-color);
   margin: 0;
   padding: 5px;
   border-bottom: 2px solid var(--secondary-bg-color);
@@ -81,9 +95,11 @@ section:nth-child(even) {
   transform: rotate3d(0, 1, 0.1, 0deg);
   transition: transform 1s cubic-bezier(0.7, 2, 1, 0.9);
   transform-style: preserve-3d;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   box-sizing: border-box;
   border-top: 0;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
   box-shadow: 10px 10px 10px var(--main-bg-color);
 }
 
@@ -101,12 +117,10 @@ section:nth-child(even) {
 
 .iw-home-toolbox-card--bar-container {
   height: 400px;
-  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0 0 15px 15px;
 }
 
 .iw-home-toolbox-card--bar {
@@ -128,4 +142,13 @@ section:nth-child(even) {
   border-radius: 10px;
   padding: 0 15px;
   box-sizing: border-box;
+}
+
+.iw-home-section-experience {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
