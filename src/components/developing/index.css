@@ -1,0 +1,18 @@
+.iw-developing--container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.iw-developing--content {
+    font-size: 72px;
+    background-color: #555b24;
+    width: 100vw;
+    text-align: center;
+    transform: rotate(330deg);
+}
