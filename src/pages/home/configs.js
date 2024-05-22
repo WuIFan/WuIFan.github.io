@@ -26,7 +26,39 @@ export default {
         {name: 'Three.js', score: 80},
         {name: 'WordPress', score: 80},
         {name: 'Docker', score: 70},
-      ]
+      ],
     },
   },
+  experience: [
+    {
+      years: '2021/04 - NOW',
+      title: 'Engineer(2021)\nSenior Engineer(2023)',
+      place: 'Perfectcorp',
+      jobs: [
+        'Implemet Web APP UI',
+        'Demo page for our web app',
+        'Web 3D object editing tool',
+        'Configurable testing environment for QA',
+      ],
+    },
+    {
+      years: '2018 - 2020',
+      title: 'Master Degree',
+      place:
+        'National Cheng Kung University, Computer Science and Information Engineering',
+      jobs: [
+        'Develope web auto testing tool - SideeX',
+        'Study how to simulate user operations on web pages',
+      ],
+    },
+    {
+      years: '2014 - 2018',
+      title: 'Bachelor Degree',
+      place:
+        'National Chung Hsing University, Computer Science and Engineering',
+      jobs: [
+        'Virtual Chunking: A Novel Design on Practical Data Chunking with Disk Usage Enhancement',
+      ],
+    },
+  ],
 };
