@@ -8,8 +8,15 @@ export default function ExperienceSection({configs}) {
     <section>
       <div className="iw-home-section-experience">
         <h2 className="iw-home-section-title">My Experience</h2>
-        {_map(configs.experience, (experience) => {
-          return <ExperienceCard experience={experience} />;
+        {_map(configs.experience, (experience, index) => {
+          return (
+            <div className="iw-home-section-experience--card-container">
+              <div className="iw-home-section-experience--card-line">
+                <div className="iw-home-section-experience--card-circle" />
+              </div>
+              <ExperienceCard experience={experience} right={index % 2 === 0} />
+            </div>
+          );
         })}
       </div>
     </section>

@@ -1,9 +1,57 @@
 .iw-home-section-experience {
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.iw-home-section-experience--card-container {
+  display: flex;
+  width: 100%;
+}
+
+.iw-home-section-experience--card {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.iw-home-section-experience--card-line {
+  width: 50%;
+  border-right: 2px solid;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.iw-home-section-experience--card-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--main-point-font-color);
+  position: absolute;
+  right: -16px;
+  top: 10px;
+}
+
+.iw-home-section-experience--card.right {
+  padding-left: 30px;
+}
+
+.iw-home-section-experience--card.left {
+  padding-right: 30px;
+  margin-left: -50%;
+}
+
+.iw-home-section-experience--card-title {
+  font-weight: 500;
+}
+
+.iw-home-section-experience--card-title.main {
+  font-size: 36px;
+}
+
+.iw-home-section-experience--card-title.sub {
+  font-size: 18px;
+  color: var(--main-point-font-color);
+}
