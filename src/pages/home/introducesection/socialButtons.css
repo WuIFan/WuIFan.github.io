@@ -1,0 +1,20 @@
+.iw-social-icon {
+  position: absolute;
+  transition:
+    opacity 0.5s ease-in,
+    top 0.5s ease-in,
+    left 0.5s ease-in;
+  opacity: 1;
+  color: var(--main-point-font-color)
+}
+
+.iw-social-icon:hover {
+  color: var(--hover-color);
+}
+
+.iw-social-icon.hidden {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

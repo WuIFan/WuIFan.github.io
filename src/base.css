@@ -4,9 +4,18 @@
   --main-font-color: #fceef5;
   --secondary-font-color: #454f5e;
   --main-point-font-color: #f4a7ba;
+  --hover-color: #ff94e0;
 }
 
 body {
   color: var(--main-font-color);
   background-color: var(--main-bg-color);
+}
+
+a {
+  color: var(--main-point-font-color);
+}
+
+img {
+  user-select: none;
 }

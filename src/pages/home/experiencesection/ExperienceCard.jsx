@@ -6,8 +6,8 @@ export default function ExperienceCard({experience, right}) {
   return (
     <div
       className={classNames('iw-home-section-experience--card', {
-        'right': right,
-        'left': !right,
+        right: right,
+        left: !right,
       })}>
       <div className="iw-home-section-experience--card-title main">
         {experience.years}
@@ -19,8 +19,8 @@ export default function ExperienceCard({experience, right}) {
         {experience.place}
       </div>
       <ul>
-        {_map(experience.jobs, (job) => {
-          return <li>{job}</li>;
+        {_map(experience.jobs, (job, index) => {
+          return <li key={index}>{job}</li>;
         })}
       </ul>
     </div>

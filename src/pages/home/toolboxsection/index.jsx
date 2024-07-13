@@ -27,9 +27,10 @@ export default function ToolboxSection({configs}) {
               back: isBackCard,
             })}>
             <div className="iw-home-toolbox--tabs">
-              {_map(configs.toolbox.categories, (category) => {
+              {_map(configs.toolbox.categories, (category, index) => {
                 return (
                   <h3
+                    key={index}
                     className={classNames('iw-home-toolbox--tab', {
                       active: activeCategory === category,
                     })}
@@ -42,9 +43,9 @@ export default function ToolboxSection({configs}) {
             <div className="iw-home-toolbox-card--bar-container">
               {_map(
                 configs.toolbox.scores[activeCategory.toLowerCase()],
-                (item) => {
+                (item, index) => {
                   return (
-                    <div className="iw-home-toolbox-card--bar">
+                    <div key={index} className="iw-home-toolbox-card--bar">
                       <div
                         className="iw-home-toolbox-card--bar-progress"
                         style={{width: `${item.score}%`}}>

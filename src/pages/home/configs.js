@@ -3,6 +3,17 @@ export default {
     text: 'Hi, I am Ivan Wu,\na Frontend Engineer,\ndedicated to work, learning, and living.',
     image: require('../../assets/IMG_2017_02.JPG'),
   },
+  social: {
+    github: {
+      link: 'https://github.com/WuIFan',
+    },
+    linkedin: {
+      link: 'https://www.linkedin.com/in/i-fan-wu-76542a182/',
+    },
+    mail: {
+      link: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=contact@iamivanwu.com',
+    },
+  },
   toolbox: {
     categories: ['Frontend', 'Backend', 'Testing', 'Others'],
     scores: {
@@ -31,6 +42,7 @@ export default {
   },
   experience: [
     {
+      key: 2,
       years: '2021/04 - NOW',
       title: 'Engineer(2021)\nSenior Engineer(2023)',
       place: 'Perfectcorp',
@@ -42,6 +54,7 @@ export default {
       ],
     },
     {
+      key: 1,
       years: '2018 - 2020',
       title: 'Master Degree',
       place:
@@ -52,6 +65,7 @@ export default {
       ],
     },
     {
+      key: 0,
       years: '2014 - 2018',
       title: 'Bachelor Degree',
       place:

@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <IntroduceSection configs={configs} />
       <ToolboxSection configs={configs} />
-      {/* <ExperienceSection configs={configs} /> */}
-      <Developing />
+      <ExperienceSection configs={configs} />
+      {/* <Developing /> */}
     </>
   );
 }
