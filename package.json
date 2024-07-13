@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.24.8",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^5.17.0",
