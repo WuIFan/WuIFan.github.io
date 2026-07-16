@@ -1,0 +1,57 @@
+:root {
+  --background: #eee8dc;
+  --paper: #fbf7ee;
+  --paper-border: #ded2bf;
+  --ink: #2c2924;
+  --muted: #766f64;
+  --sage: #68745f;
+  --clay: #a46f55;
+  --focus: rgba(104, 116, 95, 0.34);
+  --serif: "Songti TC", "Noto Serif TC", Georgia, "Times New Roman", serif;
+  --sans:
+    "PingFang TC", "Noto Sans TC", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(44, 41, 36, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 18% 16%, rgba(164, 111, 85, 0.18), transparent 28rem),
+    radial-gradient(circle at 88% 72%, rgba(104, 116, 95, 0.16), transparent 30rem),
+    var(--background);
+  background-size: 100% 28px, auto, auto, auto;
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: var(--ink);
+  background: rgba(164, 111, 85, 0.26);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
